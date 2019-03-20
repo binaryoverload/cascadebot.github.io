@@ -1,0 +1,150 @@
+@import './colors.scss';
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.section-hero {
+    min-height: 95vh;
+    align-items: center;
+    justify-content: flex-end;
+
+    .one {
+        display: flex;
+        justify-content: content;
+    }
+}
+
+.section-split {
+    display: flex;
+
+    .one, .two {
+        flex: 1;
+    }
+
+    .two {
+        max-width: 100%;
+        padding: 1em 3rem;
+
+        p {
+            max-width: 500px;
+        }
+    }
+}
+
+.section-card {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+.card-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+    .card {
+        flex: 1;
+    }
+}
+
+.section-team {
+    padding: 15rem 8rem 5rem 8rem;
+    
+    p {
+        max-width: 500px;
+    }
+
+    .card-list {
+        flex-direction: column;
+    }
+
+    .two {
+        padding-top: 0;
+    }
+}
+
+.section-overlay {
+    padding: 8rem 2rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 50%;
+        background-color: $c_bg1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .overlay-card {
+        padding: 3rem 1em;
+        max-width: 900px;
+        border-radius: 15px;
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        z-index: 5;
+        text-align: center;
+
+        h1 {
+            margin-bottom: .5em;
+        }
+    }
+}
+
+.hero-image {
+    height: 50vh;
+    width: 45vw;
+    transform: translateX(-20%);
+}
+
+.spacing-section {
+    margin: 10rem 0;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//decoration
+.symbol-image {
+    height: 10rem;
+    width: 10rem;
+    background-color: $c_redlight;
+    border-radius: 50%;
+}
+
+.section-marker {
+    position: relative;
+
+    &::before {
+        content: "77";
+        font-size: 10em;
+        position: absolute;
+        margin: 0;
+        left: -.25em;
+        top: 0;
+        font-weight: bold;
+        color: $c_purple2;
+    }
+    &.bg-darkpurple::before {
+        color: $c_bg1;
+    }
+    &.s01::before {
+        content: "01";
+    }
+    &.s02::before {
+        content: "02";
+    }
+    &.s03::before {
+        content: "03";
+    }
+
+
+}

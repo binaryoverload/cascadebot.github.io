@@ -1,0 +1,71 @@
+@import './colors.scss';
+
+button, .btn, .btn2 {
+    background-color: $c_redlight;
+    padding: 1em 2em;
+    color: $c_white1;
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: .5rem;
+    transition: background-color .1s, color .1s;
+
+    &:hover {
+        background-color: $c_reddark;
+    }
+
+    &.light {
+        background-color: $c_white1;
+        color: $c_black;
+
+        &:hover {
+            background-color: $c_white2;
+            color: $c_black;
+        }
+    }
+    &.btn2 {
+        background-color: transparent;
+        box-shadow: 0 0 0 3px $c_white inset;
+
+        &:hover {
+            background-color: $c_white;
+            color: $c_bg1;
+        }
+    }
+}
+
+.card {
+    background: $g_purple;
+    border-radius: 5px;
+    padding: 4em 2em 6em 2em;
+    text-align: left;
+    margin: 0 .5em;
+
+    &.red {
+        background: $g_red;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: .5em;
+    }
+
+    .symbol-square {
+        border: 3px solid #fff;
+        height: 2em;
+        width: 2em;
+    }
+}
+
+.card-profile {
+    background: $g_purple;
+    border-radius: 5px;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}

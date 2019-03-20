@@ -1,0 +1,47 @@
+@import './colors.scss';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: $c_white3;
+}
+
+.txt-hero, .txt-bigheading, .txt-heading {
+    color: $c_white;
+    font-weight: bold;
+    margin: 0;
+
+    &.txt-hero {
+        font-size: 5em;
+        line-height: .9;
+    }
+
+    &.txt-bigheading {
+        font-size: 3.5em;
+    }
+
+    &.txt-heading {
+        font-size: 2em;
+    }
+
+    &.txt-spaced {
+        margin: 1em 0;
+    }
+
+    &.txt-red {
+        color: $c_redtext;
+    }
+}
+
+.txt-subheading {
+    font-size: 1.25em;
+}
+
+.link-unstyled {
+    text-decoration: none;
+    color: $c_white;
+    &:hover {
+        text-decoration: none;
+        color: $c_white;
+    }
+}

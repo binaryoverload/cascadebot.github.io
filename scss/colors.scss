@@ -1,0 +1,27 @@
+$c_bg1: #2C2238;
+$c_bg2: #1B1B29;
+$c_bg3: #583566;
+$c_redlighter: #EE8181;
+$c_redlight: #EE5151;
+$c_redtext: #ED2121;
+$c_reddark: #970C0C;
+$c_purple1: #241D2D;
+$c_purple2: rgba(29, 25, 35, .5);
+$c_white: white;
+$c_white1: #EFEFEF;
+$c_white2: #E1E1E1;
+$c_white3: rgba(255, 255, 255, .7);
+$c_black: black;
+
+$g_red: linear-gradient(-45deg, $c_reddark, $c_redlight);
+$g_purple: linear-gradient(-45deg, $c_bg1, $c_bg3);
+
+.bg-purple {
+    background-color: $c_bg1;
+}
+.bg-darkpurple {
+    background-color: $c_bg2;
+}
+.bg-white {
+    background-color: $c_white;
+}
