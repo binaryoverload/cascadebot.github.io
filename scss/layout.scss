@@ -35,7 +35,7 @@ body {
 }
 
 .section-card {
-    padding: 2rem 4rem;
+    padding: 2rem 7rem 7rem 7rem;
     text-align: center;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 .section-overlay {
-    padding: 8rem 2rem;
+    padding: 8rem 8rem;
     position: relative;
 
     &::before {
@@ -82,17 +82,47 @@ body {
 
     .overlay-card {
         padding: 3rem 1em;
-        max-width: 900px;
-        border-radius: 15px;
-        margin: 0 auto;
+        border-radius: 5px;
         width: 100%;
         position: relative;
         z-index: 5;
         text-align: center;
+        box-sizing: border-box;
 
         h1 {
             margin-bottom: .5em;
         }
+    }
+}
+
+.nav {
+    padding: 1rem 8rem;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 99;
+    transition: background-color .5s;
+
+    .brand {
+        flex: 1;
+
+        p {
+            color: $c_white;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+    .item, .brand p {
+        padding: .7em 0 .7em 2.5em;
+        &.btn {
+            padding: .7em 2.5em;
+            margin-left: 2em;
+        }
+    }
+
+    &.bg {
+        background-color: $c_purple1;
     }
 }
 
@@ -114,10 +144,32 @@ body {
 
 //decoration
 .symbol-image {
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 15rem;
     background-color: $c_redlight;
-    border-radius: 50%;
+    border-radius: 2px;
+    transform: translateX(-1rem);
+
+    &::before {
+        content: "";
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        background-color: $c_purple1;
+        transform: translateX(5rem) translateY(-2rem);
+        position: absolute;
+    }
+
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 15rem 15rem;
+        border-color: transparent transparent $c_redlight transparent;
+        transform: translateX(2rem) translateY(4rem);
+        position: absolute;
+    }
 }
 
 .section-marker {
@@ -145,6 +197,77 @@ body {
     &.s03::before {
         content: "03";
     }
+}
 
+.card-deco {
+    overflow: hidden;
 
+    .circle-1, .circle-2 {
+        content: "";
+        height: 20rem;
+        width: 20rem;
+        position: absolute;
+        border: 3.5rem solid $c_white2;
+        top: -5rem;
+        left: -13.5rem;
+        border-radius: 50%;
+    }
+
+    .circle-2 {
+        right: -13.5rem;
+        left: auto;
+        bottom: -13.5rem;
+        top: auto;
+    }
+}
+
+.overlay-circle {
+    position: relative;
+    .circle {
+        content: "";
+        height: 25rem;
+        width: 25rem;
+        position: absolute;
+        border: 3.5rem solid $c_purple2;
+        bottom: -20rem;
+        right: -10rem;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    &.alt-circle .circle {
+        right: auto;
+        left: -20rem;
+        bottom: -5rem;
+    }
+}
+
+.deco-square {
+    position: relative;
+
+    &.hide {
+        overflow: hidden;
+    }
+    .square {
+        content: "";
+        height: 15rem;
+        width: 15rem;
+        transform: rotate(45deg);
+        position: absolute;
+        border: 3.5rem solid $c_bg1;
+        border-radius: 5px;
+        bottom: -5rem;
+        left: 20rem;
+        z-index: 2;
+        opacity: .5;
+    }
+
+    &.alt-square .square {
+        left: auto;
+        bottom: auto;
+        top: -5rem;
+        right: -10rem;
+        border-color: $c_purple2;
+        opacity: 1;
+    }
 }

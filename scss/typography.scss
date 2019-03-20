@@ -6,22 +6,29 @@ body {
     color: $c_white3;
 }
 
+p {
+    line-height: 1.4;
+}
+
 .txt-hero, .txt-bigheading, .txt-heading {
     color: $c_white;
     font-weight: bold;
     margin: 0;
 
     &.txt-hero {
-        font-size: 5em;
-        line-height: .9;
+        font-size: 3em;
+        line-height: 1.1;
+        margin: .5em 0 .2em 0;
     }
 
     &.txt-bigheading {
-        font-size: 3.5em;
+        font-size: 3em;
+        margin: .5em 0 .2em 0;
     }
 
     &.txt-heading {
-        font-size: 2em;
+        font-size: 1.7em;
+        margin: .5em 0 .2em 0;
     }
 
     &.txt-spaced {
@@ -33,15 +40,21 @@ body {
     }
 }
 
-.txt-subheading {
-    font-size: 1.25em;
-}
-
 .link-unstyled {
     text-decoration: none;
     color: $c_white;
     &:hover {
         text-decoration: none;
         color: $c_white;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $c_redlighter;
+
+    &:focus, &:hover {
+        text-decoration: underline;
+        color: $c_redlighter;
     }
 }

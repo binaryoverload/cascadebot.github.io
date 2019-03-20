@@ -6,7 +6,7 @@ button, .btn, .btn2 {
     color: $c_white1;
     font-size: 1rem;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     margin-right: .5rem;
     transition: background-color .1s, color .1s;
@@ -41,6 +41,8 @@ button, .btn, .btn2 {
     padding: 4em 2em 6em 2em;
     text-align: left;
     margin: 0 .5em;
+    z-index: 3;
+    position: relative;
 
     &.red {
         background: $g_red;
@@ -64,8 +66,37 @@ button, .btn, .btn2 {
 .card-profile {
     background: $g_purple;
     border-radius: 5px;
-    padding: 1em 2em;
+    padding: 1.5em 2em;
     margin-bottom: 1em;
     width: 100%;
     box-sizing: border-box;
+    z-index: 3;
+    position: relative;
+    display: flex;
+
+    .avatar {
+        height: 5rem;
+        width: 5rem;
+        background-size: cover;
+        background-position: center;
+        background-color: $c_white;
+        border-radius: 50%;
+    }
+
+    .content {
+        flex: 1;
+        padding: 0 1em;
+
+        h2 {
+            font-weight: bold;
+            color: $c_white;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        p {
+            margin: .2em 0;
+        }
+
+    }
 }
