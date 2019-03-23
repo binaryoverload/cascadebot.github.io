@@ -62,17 +62,17 @@ button, .btn, .btn2 {
         width: 2em;
     }
     
-    .symbol-circle { //todo do this shit. 3px white border for 2em sized elements.
+    .symbol-circle { // todo do this shit. 3px white border for 2em sized elements.
+        border-radius: 50%;
         border: 3px solid #fff;
         height: 2em;
         width: 2em;
     }
 
     .symbol-triangle {
-        border: 3px solid #fff;
-        height: 2em;
         width: 2em;
-    }
+        height: 2em;    
+    }   
 }
 
 .card-profile {
