@@ -1,6 +1,6 @@
 @import './colors.scss';
 
-body {
+body, html {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -113,7 +113,7 @@ body {
     .hamburger {
         display: none;
         color: white;
-        
+
         .icon {
             cursor: pointer;
 
