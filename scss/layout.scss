@@ -44,6 +44,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 1rem;
+    z-index: 3;
 
     .card {
         flex: 1;
@@ -67,7 +68,7 @@ body {
 }
 
 .section-overlay {
-    padding: 8rem 8rem;
+    padding: 8rem 8rem 0 8rem;
     position: relative;
 
     &::before {
@@ -140,6 +141,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section-footer {
+    display: flex;
+    padding: 5em 8rem;
+
+    .part {
+        margin-right: 6rem;
+
+        img {
+            height: 4rem;
+        }
+
+        h2 {
+            font-size: 1em;
+            font-weight: bold;
+            color: $c_white;
+            margin-top: 0;
+        }
+
+        p, &.url-list a {
+            margin: .5em 0;
+            display: block;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        .spaced {
+            flex: 1;
+        }
+    }
 }
 
 //decoration

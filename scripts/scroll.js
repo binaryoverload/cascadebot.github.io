@@ -20,3 +20,9 @@ window.onscroll = function() {
         paralax2Els[i].style.transform = 'rotate(45deg) translateY(' + ( paralaxMovement * 0.01 * document.documentElement.scrollTop - (document.documentElement.scrollTop / document.documentElement.scrollHeight) * 300 -100) + 'px)';
     }
 }
+
+ScrollReveal().reveal('.reveal', {
+    distance: '5%',
+    origin: 'bottom',
+    duration: 1000
+});
