@@ -204,11 +204,16 @@ body, html {
             margin-right: 0;
 
             .icon {
-                height: 2rem;
                 width: 2rem;
-                background-color: $c_bg1;
-                border-radius: 500px;
                 display: inline-block;
+                opacity: .3;
+                transition: opacity .1s;
+                margin-right: .5em;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
 

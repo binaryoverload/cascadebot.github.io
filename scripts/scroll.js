@@ -11,6 +11,8 @@ window.onscroll = function() {
     }
 }
 
+window.onscroll();
+
 ScrollReveal().reveal('.reveal', {
     distance: '5%',
     origin: 'bottom',

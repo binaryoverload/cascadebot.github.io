@@ -39,6 +39,10 @@ button, .btn, .btn2 {
         width: 10rem;
         text-align: center;
     }
+
+    &.nomargin {
+        margin: 0;
+    }
 }
 
 .card {
@@ -122,6 +126,20 @@ button, .btn, .btn2 {
             margin: .2em 0;
         }
 
+    }
+}
+
+.lbl {
+    padding: .2em .7em;
+    background-color: #000;
+    border-radius: 2px;
+    color: $c_white;
+    font-size: .7em;
+    font-weight: normal;
+    margin: 0 .5em;
+
+    &.lbl-red {
+        background-color: $c_redlight;
     }
 }
 
