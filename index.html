@@ -14,14 +14,18 @@
     <link href="./css/typography.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav id="nav" class="nav nav-scrollbg">
-        <div class="brand">
+    <nav id="nav" class="nav closed nav-scrollbg">
+        <a href="#" class="brand link-unstyled">
+            <img src="./assets/logo.svg" alt="Cascade logo">
             <p>CascadeBot</p>
+        </a>
+        <div class="hamburger">
+            <div class="icon" onclick="document.getElementById('nav').classList.toggle('closed');">ICO</div>
         </div>
-        <a href="#" class="item link-unstyled">About</a>
-        <a href="#" class="item link-unstyled">Features</a>
-        <a href="#" class="item link-unstyled">Team</a>
-        <a href="#" class="item link-unstyled">Invite</a>
+        <a href="#" class="item white">About</a>
+        <a href="#" class="item white">Features</a>
+        <a href="#" class="item white">Team</a>
+        <a href="#" class="item white">Invite</a>
         <a href="#" class="item btn link-unstyled">Dashboard</a>
     </nav>
     <section class="section-split section-hero bg-darkpurple">
@@ -56,7 +60,7 @@
         <h1 class="txt-bigheading txt-spaced reveal">Features</h1>
         <div class="card-list">
             <div class="card red reveal">
-                <div class="symbol-square"></div>
+                <div class="symbol-triangle"></div>
                 <h2 class="txt-heading">Customisation</h2>
                 <p>This bot is ultimately customizable, everything can be changed. even custom scripted commands.</p>
             </div>
@@ -66,7 +70,7 @@
                 <p>This bot is ultimately customizable, everything can be changed. even custom scripted commands.</p>
             </div>
             <div class="card reveal">
-                <div class="symbol-square"></div>
+                <div class="symbol-circle"></div>
                 <h2 class="txt-heading">Customisation</h2>
                 <p>This bot is ultimately customizable, everything can be changed. even custom scripted commands.</p>
             </div>
@@ -88,7 +92,7 @@
                     <div class="content">
                         <h2>BinaryOverload</h2>
                         <p>Put something here.</p>
-                        <a href="#">https://binaryoverload.co.uk</a>
+                        <a href="https://binaryoverload.co.uk">https://binaryoverload.co.uk</a>
                     </div>
                 </div>
                 <div class="card-profile reveal">
@@ -98,7 +102,7 @@
                     <div class="content">
                         <h2>weeryan17</h2>
                         <p>Put something else here.</p>
-                        <a href="#">https://github.com/weeryan17</a>
+                        <a href="https://github.com/weeryan17">https://github.com/weeryan17</a>
                     </div>
                 </div>
                 <div class="card-profile reveal">
@@ -108,7 +112,7 @@
                     <div class="content">
                         <h2>mrjvs</h2>
                         <p>The designer! He makes sure all graphics look nice, the UI is consistent and all of that bullshit.</p>
-                        <a href="#">https://www.mrjvs.com</a>
+                        <a href="https://www.mrjvs.com">https://www.mrjvs.com</a>
                     </div>
                 </div>
             </div>
@@ -116,15 +120,15 @@
     </section>
     <section class="section-overlay bg-darkpurple">
         <div class="overlay-card bg-white card-deco">
-            <div class="circle-1 paralax"></div>
-            <div class="circle-2 paralax"></div>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
             <h1 class="txt-bigheading txt-red">Sounds good?</h1>
             <a href="#" target="_blank" rel="noopener noreferrer" class="btn link-unstyled">Invite to server</a>
             <a href="#" target="_blank" rel="noopener noreferrer" class="btn light link-unstyled">Find out more</a>
         </div>
     </section>
     <footer class="section-footer bg-darkpurple">
-        <div class="part">
+        <div class="part brand">
             <img src="./assets/logo.svg" alt="Cascade logo">
             <p>Cascade &copy; 2019</p>
         </div>
@@ -141,6 +145,9 @@
         </div>
         <div class="part spaced social-media">
             <a href="#">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
                 <div class="icon"></div>
             </a>
         </div>

@@ -43,7 +43,7 @@ p {
 .link-unstyled {
     text-decoration: none;
     color: $c_white;
-    &:hover {
+    &:hover, &:focus {
         text-decoration: none;
         color: $c_white;
     }
@@ -56,5 +56,16 @@ a {
     &:focus, &:hover {
         text-decoration: underline;
         color: $c_redlighter;
+    }
+}
+
+a.white {
+    color: $c_white;
+    opacity: .5;
+    text-decoration: none;
+    
+    &:focus, &:hover {
+        opacity: 1;
+        text-decoration: none;
     }
 }

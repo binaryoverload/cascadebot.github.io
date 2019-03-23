@@ -25,11 +25,11 @@ button, .btn, .btn2 {
         }
     }
     &.btn2 {
-        background-color: transparent;
+        background-color: rgba($color: #fff, $alpha: 0.0);
         box-shadow: 0 0 0 3px $c_white inset;
 
         &:hover {
-            background-color: $c_white;
+            background-color: rgba($color: #fff, $alpha: 1.0);
             color: $c_bg1;
         }
     }
@@ -40,7 +40,7 @@ button, .btn, .btn2 {
     border-radius: 5px;
     padding: 4em 2em 6em 2em;
     text-align: left;
-    margin: 0 .5em;
+    margin: .5em;
     z-index: 3;
     position: relative;
 
@@ -57,6 +57,18 @@ button, .btn, .btn2 {
     }
 
     .symbol-square {
+        border: 3px solid #fff;
+        height: 2em;
+        width: 2em;
+    }
+    
+    .symbol-circle { //todo do this shit. 3px white border for 2em sized elements.
+        border: 3px solid #fff;
+        height: 2em;
+        width: 2em;
+    }
+
+    .symbol-triangle {
         border: 3px solid #fff;
         height: 2em;
         width: 2em;
