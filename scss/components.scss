@@ -9,6 +9,7 @@ button, .btn, .btn2 {
     border-radius: 2px;
     cursor: pointer;
     margin-right: .5rem;
+    margin-bottom: .5rem;
     transition: background-color .1s, color .1s;
 
     &:hover {
@@ -32,6 +33,11 @@ button, .btn, .btn2 {
             background-color: rgba($color: #fff, $alpha: 1.0);
             color: $c_bg1;
         }
+    }
+
+    &.fixedwidth {
+        width: 10rem;
+        text-align: center;
     }
 }
 

@@ -218,6 +218,10 @@ body, html {
     }
 }
 
+.zindex {
+    z-index: 5;
+    position: relative;
+}
 //decoration
 .symbol-image {
     height: 15em;
@@ -445,6 +449,27 @@ body, html {
         }
         .part.social-media {
             margin-right: 0;
+        }
+    }
+
+    .card-deco {
+        .circle-1, .circle-2 {
+            content: "";
+            height: 10rem;
+            width: 10rem;
+            position: absolute;
+            border: 3.5rem solid $c_white2;
+            top: -2.5rem;
+            left: -8.5rem;
+            border-radius: 50%;
+            z-index: 6;
+        }
+
+        .circle-2 {
+            right: -8.5rem;
+            left: auto;
+            bottom: -8.5rem;
+            top: auto;
         }
     }
 }
