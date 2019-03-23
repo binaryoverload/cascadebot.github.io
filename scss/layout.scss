@@ -41,7 +41,6 @@ body, html {
 
 .card-list {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 1rem;
     z-index: 3;
@@ -115,10 +114,17 @@ body, html {
         color: white;
 
         .icon {
-            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
 
+            cursor: pointer;
             &:hover {
                 opacity: .5;
+            }
+
+            svg {
+                height: 2em;
+                width: 2em;
             }
         }
     }
@@ -361,6 +367,7 @@ body, html {
     .nav {
         padding: 1rem 5rem;
         flex-wrap: wrap;
+        background-color: $c_purple1;
 
         .brand, .hamburger {
             flex: 1;
@@ -413,6 +420,21 @@ body, html {
 
     .section-footer {
         padding: 3rem 5rem;
+    }
+
+    .section-hero {
+        flex-direction: column-reverse;
+
+        .two {
+            margin-top: 10rem;
+            text-align: center;
+        }
+    }
+
+    .hero-image {
+        height: 30vh;
+        width: 55vw;
+        transform: translateY(20%);
     }
 }
 

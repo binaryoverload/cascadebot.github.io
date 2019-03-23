@@ -62,7 +62,7 @@ button, .btn, .btn2 {
         width: 2em;
     }
     
-    .symbol-circle { // todo do this shit. 3px white border for 2em sized elements.
+    .symbol-circle {
         border-radius: 50%;
         border: 3px solid #fff;
         height: 2em;
@@ -93,6 +93,12 @@ button, .btn, .btn2 {
         background-position: center;
         background-color: $c_white;
         border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 
     .content {
